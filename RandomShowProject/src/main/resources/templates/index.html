@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Randoms Show</title>
+    <link th:href="@{/styles.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="top">
+    <h1>Looking for something to watch?</h1>
+    <button type="submit" id="randomsButton">Next Series</button>
+</div>
+
+<div class="description-box">
+    <div class="element" id="name" th:text="${name}">Name</div>
+    <div class="element" id="popularity" th:text="${popularity}"> </div>
+    <div class="element2" id="vote_average" th:text="${vote_average}"> </div>
+    <br>
+    <div class="element3" id="overview" th:text="${overview}"> </div>
+</div>
+<div class="center">
+    <iframe id="key" class="video" th:src="'https://www.youtube.com/embed/' + ${key}" allowfullscreen></iframe>
+</div>
+<script>
+    document.getElementById("randomsButton").addEventListener("click", function() {
+        window.location.reload();
+    });
+</script>
+</body>
+</html>
