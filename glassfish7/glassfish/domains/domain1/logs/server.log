@@ -2084,3 +2084,26 @@ file:/Users/jean-michelbeaulieuberube/Documents/Randoms-Series-Project/glassfish
 [2023-10-10T16:39:38.527495-04:00] [GF 7.0.9] [INFO] [] [jakarta.enterprise.system.core] [tid: _ThreadID=62 _ThreadName=admin-listener(1)] [levelValue: 800] [[
   Randoms-Series-Project-1.0-SNAPSHOT was successfully deployed in 834 milliseconds.]]
 
+[2023-10-10T16:52:21.678416-04:00] [GF 7.0.9] [INFO] [] [org.glassfish.web.loader.WebappClassLoader] [tid: _ThreadID=65 _ThreadName=admin-listener(4)] [levelValue: 800] [[
+  close(), this:
+org.glassfish.web.loader.WebappClassLoader@384083db[name=/Randoms-Series-Project-1.0-SNAPSHOT], urls=[
+file:/Users/jean-michelbeaulieuberube/Documents/Randoms-Series-Project/Randoms-Series-Project/target/Randoms-Series-Project-1.0-SNAPSHOT/WEB-INF/classes/
+file:/Users/jean-michelbeaulieuberube/Documents/Randoms-Series-Project/glassfish7/glassfish/domains/domain1/generated/ejb/Randoms-Series-Project-1.0-SNAPSHOT/
+file:/Users/jean-michelbeaulieuberube/Documents/Randoms-Series-Project/glassfish7/glassfish/domains/domain1/generated/Randoms-Series-Project-1.0-SNAPSHOT/
+][delegate=true, context=/Randoms-Series-Project-1.0-SNAPSHOT, status=RUNNING, antiJARLocking=false, securityManager=false, packageDefinitionSecurityEnabled=false, repositories=RepositoryManager[WEB-INF/classes/], notFound.size=14, pathTimestamps.size=0, resourceEntryCache.size=0]]]
+
+[2023-10-10T16:52:22.443110-04:00] [GF 7.0.9] [INFO] [NCLS-REST-00001] [jakarta.enterprise.admin.rest] [tid: _ThreadID=64 _ThreadName=admin-listener(3)] [levelValue: 800] [[
+  Listening to REST requests at context: /command/domain.]]
+
+[2023-10-10T16:52:22.505973-04:00] [GF 7.0.9] [INFO] [NCLS-CORE-00092] [jakarta.enterprise.system.core] [tid: _ThreadID=150 _ThreadName=Thread-24] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2023-10-10T16:52:22.522288-04:00] [GF 7.0.9] [INFO] [NCLS-JMX-00002] [jakarta.enterprise.system.jmx] [tid: _ThreadID=150 _ThreadName=Thread-24] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2023-10-10T16:52:22.522543-04:00] [GF 7.0.9] [INFO] [NCLS-JMX-00001] [jakarta.enterprise.system.jmx] [tid: _ThreadID=150 _ThreadName=Thread-24] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2023-10-10T16:52:22.565763-04:00] [GF 7.0.9] [INFO] [NCLS-CORE-00013] [jakarta.enterprise.system.core] [tid: _ThreadID=150 _ThreadName=Thread-24] [levelValue: 800] [[
+  Shutdown procedure finished]]
+

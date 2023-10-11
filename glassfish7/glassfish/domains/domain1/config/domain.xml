@@ -42,7 +42,6 @@
   </resources>
   <servers>
     <server config-ref="server-config" name="server">
-      <application-ref ref="Randoms-Series-Project-1.0-SNAPSHOT" virtual-servers="server"></application-ref>
       <resource-ref ref="jdbc/__TimerPool"></resource-ref>
       <resource-ref ref="jdbc/__default"></resource-ref>
       <resource-ref ref="jms/__defaultConnectionFactory"></resource-ref>
@@ -451,15 +450,5 @@
     <secure-admin-principal dn="CN=localhost-instance,OU=GlassFish,O=Eclipse.org Foundation Inc,L=Ottawa,ST=Ontario,C=CA"></secure-admin-principal>
   </secure-admin>
   <clusters></clusters>
-  <applications>
-    <application context-root="/Randoms-Series-Project-1.0-SNAPSHOT" object-type="user" name="Randoms-Series-Project-1.0-SNAPSHOT" directory-deployed="true" location="file:/Users/jean-michelbeaulieuberube/Documents/Randoms-Series-Project/Randoms-Series-Project/target/Randoms-Series-Project-1.0-SNAPSHOT/">
-      <property name="archiveType" value="war"></property>
-      <property name="defaultAppName" value="Randoms-Series-Project-1.0-SNAPSHOT"></property>
-      <property name="appLocation" value="file:/Users/jean-michelbeaulieuberube/Documents/Randoms-Series-Project/Randoms-Series-Project/target/Randoms-Series-Project-1.0-SNAPSHOT/"></property>
-      <module name="Randoms-Series-Project-1.0-SNAPSHOT">
-        <engine sniffer="security"></engine>
-        <engine sniffer="web"></engine>
-      </module>
-    </application>
-  </applications>
+  <applications></applications>
 </domain>
