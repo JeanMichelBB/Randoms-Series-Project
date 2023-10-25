@@ -8,16 +8,18 @@
 </head>
 <body>
 <div class="top">
-    <h1>Looking for something to watch?</h1>
-    <button type="submit" id="randomsButton">Next Series</button>
+    <div class="twelve">
+    <h1 id="title">Looking for something to watch?</h1>
+    </div>
+    <button class="button" type="submit" id="randomsButton">Next Series</button>
 </div>
 
 <div class="description-box">
-    <div class="element" id="name" th:text="${name}">Name</div>
-    <div class="element" id="popularity" th:text="${popularity}"> </div>
-    <div class="element2" id="vote_average" th:text="${vote_average}"> </div>
+    <div class="name" id="name" th:text="${name}">Name</div>
+    <div class="popularity" id="popularity" th:text="${popularity}"> </div>
+    <div th:style="'background-color: ' + ${color} + ';'" class="vote_average" id="vote_average" th:text="${vote_average}"> </div>
     <br>
-    <div class="element3" id="overview" th:text="${overview}"> </div>
+    <div class="overview" id="overview" th:text="${overview}"> </div>
 </div>
 <div class="center">
     <iframe id="key" class="video" th:src="'https://www.youtube.com/embed/' + ${key}" allowfullscreen></iframe>

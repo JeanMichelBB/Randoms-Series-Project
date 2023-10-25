@@ -37,8 +37,8 @@ public class APIClient {
                 int id = show.getInt("id");
                 String name = show.getString("name");
                 String overview = show.getString("overview");
-                int popularity = show.getInt("popularity");
-                int vote_average = show.getInt("vote_average");
+                double popularity = show.getDouble("popularity");
+                double vote_average = show.getDouble("vote_average");
                 String key = getShowVideoId(id);
                 ShowModel showModel = new ShowModel(id, name, overview, popularity, vote_average, key);
                 showList.add(showModel);
